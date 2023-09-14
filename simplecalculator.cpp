@@ -5,7 +5,7 @@ int main()
 {
     cout << "\n\n\n\tSimple Calculator" << endl;
     cout << endl;
-    int a, b;
+    float a, b;
     char choice;
     cout << "Enter two numbers:" << endl;
     cin >> a >> b; // taking 2 numbers as input from user
@@ -21,6 +21,9 @@ int main()
         break;
     case '*':
         cout << a << "*" << b << " = " << (a * b);
+        break;
+    case '/':
+        cout << a << "/" << b << " = " << (a / b);
         break;
     default:
         cout << "Please enter a valid operation"; // default statement when user enters invalid operation
